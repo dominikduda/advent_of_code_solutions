@@ -38,7 +38,7 @@ For example:
 
 What is the position of the character that causes Santa to first enter the basement?
 
-[See this problem on Advent of Code](http://adventofcode.com/day/1) | [See my solution (.rb)](https://github.com/dominikduda/advent_of_code_solutions/blob/master/solutions/day_1.rb)
+[See this problem on Advent of Code](http://adventofcode.com/day/1) | [See my part one solution (.rb)](https://github.com/dominikduda/advent_of_code_solutions/blob/master/solutions/day_1_part_one.rb) | [See my part two solution (.rb)](https://github.com/dominikduda/advent_of_code_solutions/blob/master/solutions/day_1_part_two.rb)
 
 ---
 ### Day 2:
@@ -66,4 +66,4 @@ For example:
 
 How many total feet of ribbon should they order?
 
-[See this problem on Advent of Code](http://adventofcode.com/day/2) | [See my solution (.rb)](https://github.com/dominikduda/advent_of_code_solutions/blob/master/solutions/day_2.rb)
+[See this problem on Advent of Code](http://adventofcode.com/day/2) | [See my part one solution (.rb)](https://github.com/dominikduda/advent_of_code_solutions/blob/master/solutions/day_2_part_one.rb) | [See my part two solution (.rb)](https://github.com/dominikduda/advent_of_code_solutions/blob/master/solutions/day_2_part_two.rb)
