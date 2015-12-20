@@ -4,10 +4,11 @@
 
 In case content of site mentioned above would change or disappear for whatever reason, I'm pasting here versions of problems I was working with.
 
+Note that input is unique for every user.
 
 All solutions are made in ruby 2.2.3.
 
-#### Solved problems list: [day 1](#day-1), [day 2](#day-2), [day 3](#day-3)
+#### Solved problems list: [day 1](#day-1), [day 2](#day-2), [day 3](#day-3), [day 4](#day-4)
 
 ---
 ### Day 1:
@@ -26,17 +27,17 @@ For example:
 * **())** and **))(** both result in floor **-1** (the first basement level).
 * **)))** and **)())())** both result in floor **-3**.
 
-To what floor do the instructions take Santa?
+To **what floor** do the instructions take Santa?
 
 **--- Part Two ---**
 
-Now, given the same instructions, find the position of the first character that causes him to enter the basement (floor **-1**). The first character in the instructions has position **1**, the second character has position **2**, and so on.
+Now, given the same instructions, find the **position** of the first character that causes him to enter the basement (floor **-1**). The first character in the instructions has position **1**, the second character has position **2**, and so on.
 
 For example:
 * **)** causes him to enter the basement at character position **1**.
 * **()())** causes him to enter the basement at character position **5**.
 
-What is the position of the character that causes Santa to first enter the basement?
+What is the **position** of the character that causes Santa to first enter the basement?
 
 [See this problem on Advent of Code](http://adventofcode.com/day/1) | [See my part one solution (.rb)](https://github.com/dominikduda/advent_of_code_solutions/blob/master/solutions/day_1_part_one.rb) | [See my part two solution (.rb)](https://github.com/dominikduda/advent_of_code_solutions/blob/master/solutions/day_1_part_two.rb)
 
@@ -46,13 +47,13 @@ What is the position of the character that causes Santa to first enter the basem
 
 The elves are running low on wrapping paper, and so they need to submit an order for more. They have a list of the dimensions (length **l**, width **w**, and height **h**) of each present, and only want to order exactly as much as they need.
 
-Fortunately, every present is a box (a perfect right rectangular prism), which makes calculating the required wrapping paper for each gift a little easier: find the surface area of the box, which is **2×l×w + 2×w×h + 2×h×l**. The elves also need a little extra paper for each present: the area of the smallest side.
+Fortunately, every present is a box ([a perfect right rectangular prism](https://en.wikipedia.org/wiki/Cuboid#Rectangular_cuboid)), which makes calculating the required wrapping paper for each gift a little easier: find the surface area of the box, which is **2×l×w + 2×w×h + 2×h×l**. The elves also need a little extra paper for each present: the area of the smallest side.
 
 For example:
 * A present with dimensions **2x3x4** requires **2×6 + 2×12 + 2×8 = 52** square feet of wrapping paper plus **6** square feet of slack, for a total of **58** square feet.
 * A present with dimensions **1x1x10** requires **2×1 + 2×10 + 2×10 = 42** square feet of wrapping paper plus **1** square foot of slack, for a total of **43** square feet.
 
-All numbers in the elves' list are in feet. How many total square feet of wrapping paper should they order?
+All numbers in the elves' list are in feet. How many total **square feet of wrapping paper** should they order?
 
 **--- Part Two ---**
 
@@ -64,7 +65,7 @@ For example:
 * A present with dimensions **2x3x4** requires **2+2+3+3 = 10** feet of ribbon to wrap the present plus **2×3×4 = 24** feet of ribbon for the bow, for a total of **34** feet.
 * A present with dimensions **1x1x10** requires **1+1+1+1 = 4** feet of ribbon to wrap the present plus **1×1×10 = 10** feet of ribbon for the bow, for a total of **14** feet.
 
-How many total feet of ribbon should they order?
+How many total **feet of ribbon** should they order?
 
 [See this problem on Advent of Code](http://adventofcode.com/day/2) | [See my part one solution (.rb)](https://github.com/dominikduda/advent_of_code_solutions/blob/master/solutions/day_2_part_one.rb) | [See my part two solution (.rb)](https://github.com/dominikduda/advent_of_code_solutions/blob/master/solutions/day_2_part_two.rb)
 
@@ -76,7 +77,7 @@ Santa is delivering presents to an infinite two-dimensional grid of houses.
 
 He begins by delivering a present to the house at his starting location, and then an elf at the North Pole calls him via radio and tells him where to move next. Moves are always exactly one house to the north (**^**), south (**v**), east (**>**), or west (**<**). After each move, he delivers another present to the house at his new location.
 
-However, the elf back at the north pole has had a little too much eggnog, and so his directions are a little off, and Santa ends up visiting some houses more than once. How many houses receive at least one present?
+However, the elf back at the north pole has had a little too much eggnog, and so his directions are a little off, and Santa ends up visiting some houses more than once. How many houses receive **at least one present**?
 
 For example:
 
@@ -86,11 +87,11 @@ For example:
 
 **--- Part Two ---**
 
-The next year, to speed up the process, Santa creates a robot version of himself, Robo-Santa, to deliver presents with him.
+The next year, to speed up the process, Santa creates a robot version of himself, **Robo-Santa**, to deliver presents with him.
 
 Santa and Robo-Santa start at the same location (delivering two presents to the same starting house), then take turns moving based on instructions from the elf, who is eggnoggedly reading from the same script as the previous year.
 
-This year, how many houses receive at least one present?
+This year, how many houses receive **at least one present**?
 
 For example:
 
@@ -99,3 +100,24 @@ For example:
 * **^v^v^v^v^v** now delivers presents to **11** houses, with Santa going one direction and Robo-Santa going the other.
 
 [See this problem on Advent of Code](http://adventofcode.com/day/3) | [See my part one solution (.rb)](https://github.com/dominikduda/advent_of_code_solutions/blob/master/solutions/day_3_part_one.rb) | [See my part two solution (.rb)](https://github.com/dominikduda/advent_of_code_solutions/blob/master/solutions/day_3_part_two.rb)
+
+---
+### Day 4:
+##### The Ideal Stocking Stuffer
+
+Santa needs help [mining](https://en.wikipedia.org/wiki/Bitcoin#Mining) some AdventCoins (very similar to [bitcoins](https://en.wikipedia.org/wiki/Bitcoin)) to use as gifts for all the economically forward-thinking little girls and boys.
+
+To do this, he needs to find [MD5](https://en.wikipedia.org/wiki/MD5) hashes which, in [hexadecimal](https://en.wikipedia.org/wiki/Hexadecimal), start with at least **five zeroes**. The input to the MD5 hash is some secret key (your puzzle input, given below) followed by a number in decimal. To mine AdventCoins, you must find Santa the lowest positive number (no leading zeroes: **1**, **2**, **3**, ...) that produces such a hash.
+
+For example:
+
+* If your secret key is **abcdef**, the answer is **609043**, because the MD5 hash of **abcdef609043** starts with five zeroes (**000001dbbfa...**), and it is the lowest such number to do so.
+* If your secret key is **pqrstuv**, the lowest number it combines with to make an MD5 hash starting with five zeroes is **1048970**; that is, the MD5 hash of **pqrstuv1048970** looks like **000006136ef...**.
+
+Your puzzle input is **iwrupvqb**.
+
+**--- Part Two ---**
+
+Now find one that starts with **six zeroes**.
+
+[See this problem on Advent of Code](http://adventofcode.com/day/4) | [See my part one solution (.rb)](https://github.com/dominikduda/advent_of_code_solutions/blob/master/solutions/day_4_part_one.rb) | [See my part two solution (.rb)](https://github.com/dominikduda/advent_of_code_solutions/blob/master/solutions/day_4_part_two.rb)
