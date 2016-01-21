@@ -1,4 +1,4 @@
-### All problems are taken form [Advent of Code](http://adventofcode.com/) made by [Eric Wastl](http://was.tl/).
+### All problems are taken from [Advent of Code](http://adventofcode.com/) made by [Eric Wastl](http://was.tl/).
 
 >Advent of Code is a series of small programming puzzles for a variety of skill levels. They are self-contained and are just as appropriate for an expert who wants to stay sharp as they are for a beginner who is just learning to code. Each puzzle calls upon different skills and has two parts that build on a theme.
 
@@ -8,7 +8,7 @@ Note that input is unique for every user.
 
 All solutions are made in ruby 2.2.3 and 2.3.0.
 
-#### Solved problems list: [day 1](#day-1), [day 2](#day-2), [day 3](#day-3), [day 4](#day-4)
+#### Solved problems list: [day 1](#day-1), [day 2](#day-2), [day 3](#day-3), [day 4](#day-4), [day 5](#day-5), [day 6](#day-6)
 
 ---
 ### Day 1:
@@ -200,7 +200,7 @@ What is the **total brightness** of all lights combined after following Santa's 
 
 For example:
 
-* turn on 0,0 through 0,0 would increase the total brightness by 1.
-* toggle 0,0 through 999,999 would increase the total brightness by 2000000.
+* turn on **0,0 through 0,0** would increase the total brightness by **1**.
+* toggle **0,0 through 999,999** would increase the total brightness by **2000000**.
 
 [See this problem on Advent of Code](http://adventofcode.com/day/6) | [See my part one solution (.rb)](https://github.com/dominikduda/advent_of_code_solutions/blob/master/solutions/day_6_part_one.rb) | [See my part two solution (.rb)](https://github.com/dominikduda/advent_of_code_solutions/blob/master/solutions/day_6_part_two.rb)
