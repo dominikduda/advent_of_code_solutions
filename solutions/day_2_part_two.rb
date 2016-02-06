@@ -22,4 +22,3 @@ dimensions_list.each do |dimensions|
   total_length += present.length_or_ribbon_needed_to_wrap
 end
 puts total_length
-

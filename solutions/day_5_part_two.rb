@@ -19,13 +19,13 @@ class SantaString
   end
 
   def any_non_overlapping_pair?
-    pair =[]
+    pair = []
     splitted_string_length = @splitted_string.length
     (splitted_string_length - 1).times do |i|
       pair = @splitted_string[i..i + 1]
       return true if contains?(@splitted_string[i + 2..splitted_string_length], pair)
     end
-    return false
+    false
   end
 
   def any_letter_repeat_with_one_letter_separator?
@@ -37,7 +37,7 @@ class SantaString
 end
 
 santa_string = SantaString.new
-strings = File.open('../puzzle_input/day_5.txt', 'r', &:read).split("\n").map { |string| string.chars }
+strings = File.open('../puzzle_input/day_5.txt', 'r', &:read).split("\n").map(&:chars)
 nice_string_counter = 0
 strings.each do |string|
   santa_string.splitted_string = string

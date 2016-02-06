@@ -2,8 +2,8 @@ class SantaString
   attr_writer :splitted_string
 
   def initialize
-    @vovels = ['a', 'e', 'i', 'o', 'u']
-    @restricted_strings = ['ab', 'cd', 'pq', 'xy']
+    @vovels = %w(a e i o u)
+    @restricted_strings = %w(ab cd pq xy)
     @splitted_string
   end
 
@@ -35,7 +35,7 @@ class SantaString
 end
 
 santa_string = SantaString.new
-strings = File.open('../puzzle_input/day_5.txt', 'r', &:read).split("\n").map { |string| string.chars }
+strings = File.open('../puzzle_input/day_5.txt', 'r', &:read).split("\n").map(&:chars)
 nice_string_counter = 0
 strings.each do |string|
   santa_string.splitted_string = string

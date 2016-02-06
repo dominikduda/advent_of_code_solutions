@@ -17,7 +17,5 @@ end
 
 directions = File.open('../puzzle_input/day_1.txt', 'r', &:read)
 santa = Santa.new(directions)
-until santa.no_more_instructions? do
-  santa.execute_next_direction
-end
+santa.execute_next_direction until santa.no_more_instructions?
 puts santa.floor

@@ -14,14 +14,12 @@ class MD5Hash
 
   def start_with_6_zeros?
     hash = Digest::MD5.new
-    hash.update (@key + @number)
+    hash.update(@key + @number)
     hash.hexdigest[0..5].chars.all? { |number| number == '0' }
   end
 end
 
 secret_key = 'iwrupvqb'
 md5_hash = MD5Hash.new(secret_key)
-until md5_hash.start_with_6_zeros? do
-  md5_hash.increment_number
-end
+md5_hash.increment_number until md5_hash.start_with_6_zeros?
 puts md5_hash.number
